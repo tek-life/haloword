@@ -5,6 +5,8 @@ $(document).ready(function() {
         var word = $("#search_field").val();
         $("#search_field").select();
         query(word);
+        storage_word(word);
+        wordlist_add(word);
         return false;
     });
 
